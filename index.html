@@ -16,43 +16,51 @@
 
 <body>
 
-    <header> <!--?Tiene que haber un header-->
+    <header class="header"> <!--?Tiene que haber un header-->
 
-        <nav> <!--! asi construiriamos La barra de navegación, dentro de un header-->
-            <a href="#">Inicio</a> <!--!dos <a>-->
-            <a href="#">Sobre Mi</a>
+        <nav class="header__menu"> <!--! asi construiriamos La barra de navegación, dentro de un header-->
+            <a href="#" class="header__menu__link">Inicio</a> <!--!dos <a>-->
+            <a href="#" class="header__menu__link">Sobre Mi</a>
         </nav>
 
     </header>
 
 
-    <main> <!--?El contenido principal de la pagina tiene que ir dentro de la etiqueta main-->
+    <main class="presentacion"> <!--?El contenido principal de la pagina tiene que ir dentro de la etiqueta main-->
 
-        <section> <!--!Dentro de main, creamos una sección-->
+        <section class="presentacion__contenido"> <!--!Dentro de main, creamos una sección-->
 
-            <h1><strong>"Desarrollador Web Full Stack en formación</strong>, combinando teoría y práctica para crear
+            <h1 class="presentacion__contenido__titulo"><strong class="titulo__destaque">" Desarrollador Web Full Stack
+                    en formación</strong>,
+                combinando teoría y práctica para crear
                 soluciones
                 digitales"
             </h1>
-            <p>¡Hola! Soy Luis Calegari. Estoy en camino a convertirme en Desarrollador Web Full Stack, aprendiendo
+            <p class="presentacion__contenido__texto">¡Hola! Soy Luis Calegari. Estoy en camino a convertirme en
+                Desarrollador Web Full Stack, aprendiendo
                 nuevas tecnologías y
-                aplicándolas en proyectos reales. Estoy en constante aprendizaje y listo para aportar valor en un equipo
+                aplicándolas en proyectos reales. Estoy en constante aprendizaje y listo para aportar valor en un
+                equipo
                 de trabajo.</p>
             </p>
-            <div>
-                <h2>Accede a mis redes</h2>
-                <a href="#">LinkedIn</a>
-                <a href="#">GitHub</a>
-                <a href="#">Instagram</a>
+            <div class="presentacion__enlaces">
+                <h2 class="presentacion__enlaces__subtitulo">Accede a mis redes</h2>
+                <a href="https://www.linkedin.com/in/luis-angel-calegari/" target="_blank"
+                    class="presentacion__enlaces__link"><img src="assets/linkedin.png"
+                        alt="Icono de linkedin">LinkedIn</a>
+                <a href="#" class="presentacion__enlaces__link"><img src="assets/github.png"
+                        alt="Icono de GitHub">GitHub</a>
+                <a href="#" class="presentacion__enlaces__link"><img src="assets/instagram.png"
+                        alt="Icono de Instagram">Instagram</a>
             </div>
 
         </section>
 
-        <img src="assets/gatito.jpg" alt="Imagen de Luis Calegari trabajando">
+        <img src="assets/perfil-prueba.jpg" alt="Imagen de Luis Calegari trabajando" class="presentacion__imagen">
 
     </main>
 
-    <footer> <!--?El footer tiene que ir al final de la pagina-->
+    <footer class="footer"> <!--?El footer tiene que ir al final de la pagina-->
         <p>Desarrollado por Luis Calegari - 2025</p>
     </footer>
 

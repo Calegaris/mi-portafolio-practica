@@ -21,8 +21,8 @@
 
 
 body {
-    background-color: var(--color-background);
-    color: var(--color-blanco);
+    background-color: var(--color-complemento);
+    color: var(--color-negro);
     font-family: var(--fuente-secundaria);
 }
 
@@ -31,5 +31,119 @@ h1,
 h2,
 h3 {
     font-family: 'Poppins', sans-serif;
+    color: var(--color-negro);
+}
+
+.header {
+    padding: 20px 0px;
+    display: flex;
+    justify-content: center;
+    /* Centra horizontalmente */
+    align-items: center;
+    width: 100%;
+    background-color: var(--color-primario);
+}
+
+.header__menu {
+    display: flex;
+    gap: 200px;
+}
+
+.header__menu__link {
+    font-family: var(--fuente-secundaria);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-negro);
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.header__menu__link:hover {
     color: var(--color-blanco);
+    transform: translateX(21.5px);
+}
+
+
+.presentacion {
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.presentacion__contenido {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.presentacion__contenido__titulo {
+    font-size: 2rem;
+}
+
+.titulo__destaque {
+    color: var(--color-secundario);
+    font-weight: 600;
+    /* Hace el texto más grueso */
+    text-shadow: 1px 1px 0px var(--color-negro),
+        -1px -1px 0px var(--color-negro),
+        -1px 1px 0px var(--color-negro),
+        1px -1px 0px var(--color-negro);
+
+}
+
+.presentacion__contenido__texto {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.presentacion__imagen {
+    width: 50%;
+    height: 50%;
+}
+
+.presentacion__enlaces {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.presentacion__enlaces__subtitulo {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.presentacion__enlaces__link {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid var(--color-negro);
+    padding: 21.5px 0px;
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--color-negro);
+    transition: transform 0.3s ease, text-decoration 0.3s ease;
+}
+
+.presentacion__enlaces__link:hover {
+    transform: scale(1.1);
+    background-color: var(--color-complemento2);
+    color: var(--color-blanco);
+}
+
+.footer {
+    color: var(--color-blanco);
+    background-color: var(--color-primario);
+    padding: 24px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
 }
