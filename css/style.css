@@ -1,11 +1,35 @@
-
 :root {
-    --color-primario: #023CD7;
-    --color-secundario: #EFF8E2;
-    --color-background: #303435;
+    --color-primario: #0B5351;
+    --color-secundario: #00A9A5;
+    --color-background: #092327;
+    --color-complemento: #4E8098;
+    --color-complemento2: #90C2E7;
     --color-negro: #1B2021;
     --color-blanco: #f6f6f6;
 
-    --fuente-principal: "Inter", serif;
+    --fuente-principal: "Poppins", sans-serif;
+    --fuente-secundaria: "Inter", serif;
 
+}
+
+* {
+    /*! Esto tiene que estar siempre creo*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: var(--color-background);
+    color: var(--color-blanco);
+    font-family: var(--fuente-secundaria);
+}
+
+/* Usa Poppins para los títulos */
+h1,
+h2,
+h3 {
+    font-family: 'Poppins', sans-serif;
+    color: var(--color-blanco);
 }
